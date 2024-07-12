@@ -22,3 +22,5 @@ django:
 migrate:
 	cd myproject && python manage.py startapp main && 
 
+start:
+	cd myproject && python manage.py runserver

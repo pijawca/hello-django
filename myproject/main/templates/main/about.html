@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT ME</title>
+    <style>
+        body {
+            font-family: Roboto, condensed medium;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            background-color: #cccccc;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: black;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #669999;
+        }
+
+        .logo {
+            margin: 0 20px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        .logo img {
+            width: 50px;
+            height: auto;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .content {
+            text-align: center;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{% url 'about' %}">ABOUT</a>
+        <a href="{% url 'contact' %}">CONTACT</a>
+        <div class="logo">
+            <a href="{% url 'home' %}">
+                <img src="{% static 'main/logo.png' %}" alt="Logo">
+            </a>
+        </div>
+        <a href="{% url 'code' %}">CODE</a>
+        <a href="{% url 'services' %}">SERVICES</a>
+    </nav>
+    <div class="content">
+        <h1>ABOUT ME</h1>
+        <p>Приветствую тебя на моем сайте-визитке! <br>
+            Меня зовут Илья, мне просто нравится программировать. У меня нет образования в сфере IT, но я учусь и стремлюсь улучшать свой код в каждом моем проекте!<br><br>
+            Так же вы можете глянуть на мои работы ниже 👇
+        </p>
+    </div>
+</body>
+</html>
