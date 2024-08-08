@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devpijawca</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="{% static 'css/shop.css' %}">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+</head>
+<body>
+    <header class="othermenu">
+        <a href="{% url 'home' %}" class="menu-item">HOME</a>
+        <span class="separator">X</span>
+        <a href="#" class="menu-item">CODE</a>
+        <span class="separator">X</span>
+        <a href="#shop" class="menu-item">SHOP</a>
+    </header>
+    <footer>
+        <div class="wechat">
+            <div class="product-info">
+                <h2>Приглашение в WeChat</h2>
+                <p>Отправка с личного аккаунта.<br>
+                    Аккаунт прогретый и рабочий</p>
+                <div class="buttons">
+                    <a href="https://t.me/pijawca" class="button telegram">Связаться</a>
+                </div>
+            </div>
+        </div>
+        <div class="nftwarm">
+            <div class="product-info">
+                <h2>NFTWarm</h2>
+                <p>Сканирует и отправляет ваше сообщение по всем транзам</p>
+                <div class="buttons">
+                    <a href="https://t.me/pijawca" class="button telegram">Связаться</a>
+                </div>
+            </div>
+        </div>
+        <div class="mirroryoutube">
+            <div class="product-info">
+                <h2>Mirror Youtube</h2>
+                <p>Обход замедления в России</p>
+                <div class="buttons">
+                    <a href="https://t.me/pijawca" class="button telegram">Связаться</a>
+                </div>
+            </div>
+        </div>
+        <div class="userscan">
+            <div class="product-info">
+                <h2>UserScan</h2>
+                <p>Сканирует занятые ники в телеграм. При освобождении никнейма<br>
+                Если ник не занят, создает его. </p>
+                <div class="buttons">
+                    <a href="https://t.me/pijawca" class="button telegram">Связаться</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

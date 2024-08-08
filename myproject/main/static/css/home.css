@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.separator {
+    color: rgb(31, 108, 205);
+    font-size: 18px;
+    margin: 0 10px;
+
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.social-links a[href="https://t.me/pijawca"]:hover img {
+    filter: hue-rotate(20deg) brightness(1) saturate(1);
+}
+
+.social-links a[href="https://t.me/pijawcatoday"]:hover img {
+    filter: hue-rotate(540deg) brightness(1) saturate(1);
+}
+
+.social-links a[href="https://github.com/pijawca"]:hover img {
+    filter: hue-rotate(30deg) brightness(1) saturate(1);
+}
+
+.container-wechat {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 300px;
+    height: 700px;
+    background-image: url("/static/images/wechat.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-right: 30px;
+}
+
+.container-nftwarm {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 300px;
+    height: 700px;
+    background-image: url("/static/images/nftwarm.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-right: 30px;
+}
+
+.container-telegrambot {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 300px;
+    height: 700px;
+    background-image: url("/static/images/nftwarm.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-right: 30px;
+}
+
+.product-info {
+    width: 300px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+.button {
+    background-color: #1D7373;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.button.telegram {
+    background-color: #0088cc;
+}

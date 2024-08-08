@@ -4,29 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="{% static 'styles/home.css' %}">
+    <title>devpijawca</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
 </head>
 <body>
-    <div class="social-icons">
-        <a href="https://t.me/pijawca">
-            <img src="{% static 'main/telegram.png' %}" alt="Telegram">
-        </a>
-        <a href="https://github.com/pijawca">
-            <img src="{% static 'main/github.png' %}" alt="GitHub">
-        </a>
-        <a href="https://lolz.live/pijawca">
-            <img src="{% static 'main/zelenka.png' %}" alt="Zelenka">
-        </a>
+    <div class="container">
+        <div class="menu">
+            <a href="#" class="menu-item">CODE</a>
+            <span class="separator">X</span>
+            <a href="{% url 'shop' %}" class="menu-item">SHOP</a>
+        </div>
+        <div class="logo">
+            <img src="{% static 'images/logo.png' %}" alt="Logo">
+        </div>
+        <div class="social-links">
+            <a href="https://t.me/pijawca" target="telegram">
+                <img src="{% static 'images/telegram.png' %}" alt="Telegram">
+            </a>
+            <a href="https://t.me/pijawcatoday" target="channel telegram">
+                <img src="{% static 'images/telegram.png' %}" alt="Channel Telegram">
+            </a>
+            <a href="https://github.com/pijawca" target="github">
+                <img src="{% static 'images/github.png' %}" alt="Github">
+            </a>
+        </div>
     </div>
-    <div class="logo">
-        <img src="{% static 'main/logo.png' %}" alt="Logo">
-    </div>
-    <nav class="navbar">
-        <a href="{% url 'about' %}">ОБО МНЕ</a>
-        <a href="{% url 'contact' %}">CONTACT</a>
-        <a href="{% url 'code' %}">ВВЕСТИ КОД</a>
-        <a href="{% url 'portfolio' %}">ПОРТФОЛИО</a>
-    </nav>
 </body>
 </html>
